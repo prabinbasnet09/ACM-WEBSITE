@@ -1,0 +1,25 @@
+.footer {
+  width : 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 5%;
+  background-color: rgb(226, 226, 226);
+  gap: 8%;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  &-description {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin:2% 0;
+    text-align: justify;
+  }
+}
+

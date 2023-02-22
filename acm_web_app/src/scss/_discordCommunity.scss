@@ -1,0 +1,79 @@
+.discord_community--title{
+    font-weight: map-get($font_weight, bold);
+    font-size: map-get($font_size, large);
+    text-align: center;
+}
+
+.discord_container{
+    display: grid;
+    margin: 5rem auto;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+
+    @media only screen and (min-width: 600px) {
+        & {
+          grid-template-columns: 1fr 1fr;
+        }  
+    }
+
+    @media only screen and (min-width: 900px) {
+        & {
+          grid-template-columns: 1fr 1fr 1fr ;
+        }
+    }
+}
+
+.card {
+    min-height: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+
+    &:hover{
+        top: -2px;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    }
+
+    & article {
+        padding: 20px;
+        display: flex;
+        
+        flex: 1;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+
+    .background_cover{
+        background-image: url("../images/discord.jpeg");
+        padding-bottom: 60%;
+        background-size: cover;
+        box-sizing: border-box;
+        background-position: center center;
+    }
+
+    .item--description{
+        margin: 1rem auto;
+        flex: 1; /* make p grow to fill available space*/
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 0;
+        color: #333;
+    }
+
+    &--btn{
+        margin: 2em 0 0 0;
+    }
+    
+      
+}

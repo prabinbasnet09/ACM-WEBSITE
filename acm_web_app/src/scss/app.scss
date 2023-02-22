@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import 'resets';
+@import 'variables';
+@import 'navbar';
+@import 'discordCommunity';
+@import 'academics';
+@import 'executiveMembers';
+@import 'homepage';
+@import 'academicDescription';
+@import 'footer';
+@import 'signupForm';
+@import 'formInput';
+@import 'currentEvents';
+@import 'admin';
+
+body {
+    margin-top: 6rem;
+    background: $primary-background-color;
+    color: $text-color;
+}
+
+

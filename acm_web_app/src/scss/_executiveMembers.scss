@@ -1,0 +1,137 @@
+.executive_members--title{
+    font-weight: map-get($font_weight, bold);
+    font-size: map-get($font_size, large);
+    text-align: center;
+    color: $primary-color;
+}
+
+.member_container{
+    display: grid;
+    margin: 5rem auto;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+
+    @media only screen and (min-width: 600px) {
+        & {
+          grid-template-columns: 1fr 1fr;
+        }  
+    }
+
+    @media only screen and (min-width: 900px) {
+        & {
+          grid-template-columns: 1fr 1fr 1fr ;
+        }
+    }
+
+
+  .card {
+      min-height: 100%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: #444;
+      position: relative;
+      top: 0;
+      transition: all .1s ease-in;
+
+      &:hover{
+          top: -2px;
+          box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+      }
+
+      & article {
+          padding: 20px;
+          display: flex;
+          
+          flex: 1;
+          justify-content: space-between;
+          flex-direction: column;
+          
+      }
+  } 
+
+    .card .background_cover_president {
+        background-image: url("https://media.licdn.com/dms/image/D4D35AQHBZw8uoUxkVw/profile-framedphoto-shrink_800_800/0/1666640045319?e=1677693600&v=beta&t=GP99TsMIwxwZwzxLzxs_odvRVsJqUoUX3Rmm1U2JuHU");
+        border-radius: 50%;
+        margin: 20% 10% 10% 20%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: center center;
+      }
+      
+      .card .background_cover_vice_president {
+        background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_800_800/0/1650573217613?e=1668643200&v=beta&t=B-00nj0mnw65dr9AYoyGs_WhaerKsthJhEEShKGbDRo");
+        border-radius: 50%;
+        margin: 20% 10% 10% 20%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .card .background_cover_vice_president {
+        background-image: url("https://media.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_200_200/0/1650573217613?e=1682553600&v=beta&t=4r2UejIW5iipawv7jmCDfGZc_ctbOShMlkF3I1CV1EQ");
+        border-radius: 50%;
+        margin: 20% 10% 10% 20%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .card .background_cover_secretary {
+        background-image: url("https://media.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_200_200/0/1650573217613?e=1682553600&v=beta&t=4r2UejIW5iipawv7jmCDfGZc_ctbOShMlkF3I1CV1EQ");
+        border-radius: 50%;
+        margin: 20% 10% 10% 20%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .card .background_cover_treasurer {
+        background-image: url("https://media.licdn.com/dms/image/C4E03AQFinHO1YxeL6w/profile-displayphoto-shrink_200_200/0/1614645019552?e=1682553600&v=beta&t=N_IlcxbUyDQkptWt9j-_KkfTHQrAEy1JtcMixdTYa4w");
+        border-radius: 50%;
+        margin: 20% 10% 10% 20%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: center center;
+      }
+      
+      .card .background_cover_faculty {
+        background-image: url("https://media.licdn.com/dms/image/C4E03AQH6d32k7NO-JA/profile-displayphoto-shrink_200_200/0/1519756637433?e=1682553600&v=beta&t=yW2gzWUktsDP5MtsxP_Ks0N2CIDuLpGmHJUSXzUYcbQ");
+        border-radius: 50%;
+        margin: 20% 10% 10% 20%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: center center;
+      }
+      
+      .card .background_cover_pubRelation {
+        background-image: url("https://media.licdn.com/dms/image/C4E03AQH6d32k7NO-JA/profile-displayphoto-shrink_200_200/0/1519756637433?e=1682553600&v=beta&t=yW2gzWUktsDP5MtsxP_Ks0N2CIDuLpGmHJUSXzUYcbQ");
+        border-radius: 50%;
+        margin: 20% 10% 10% 20%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: center center;
+      }
+      
+    .item--description{
+        margin: 1rem auto;
+        flex: 1; /* make p grow to fill available space*/
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 0;
+        color: #333;
+        text-align: center;
+    }
+
+    &--btn{
+        margin: 2em 0 0 0;
+    }    
+}

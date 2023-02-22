@@ -1,0 +1,227 @@
+@mixin divStyle{
+  width: 70%;
+  margin: 5em auto;
+  padding: 2rem;
+  border-radius: 20px;;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.home{  
+    &--title{
+        text-align: center;
+        font-size: map-get($font-size, large);
+        font-weight: map-get($font_weight, bold );
+        color: $primary-color;
+    }
+
+    &--aboutACM  {
+      width: 600px;
+      height: auto;
+      background: #ffffff;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 20px 8px #d0d0d0;
+      margin-bottom: 10rem;
+    }
+
+    &--aboutChapter{
+      width: 600px;
+      height: auto;
+      background: #ffffff;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 20px 8px #d0d0d0;
+    }
+
+    .heading{
+      font-size: 50px;
+      text-align: center;
+      font-weight: bolder;
+      margin-bottom: 1.5rem;
+      color: $primary-color
+    }
+
+    .description{
+      line-height: 4ch;
+    }
+
+    &--courses{
+      // margin: 50px;
+    }
+
+    &--courses--title{
+      font-size: 70px;
+      font-weight: bolder;
+      text-align: center;
+      margin: 150px 0 50px 0;
+      color: $primary-color;
+    }
+
+    &--courses--course-chart{
+      margin: 0 auto;
+      width: 100%;
+      height: 700px;
+    }
+    
+  .section {
+    display: none;
+    padding: 2rem;
+    
+    @media screen and (min-width: 768px) {
+      padding: 4rem;
+    }
+    
+    @supports(display: grid) {
+      display: block;
+    }
+  }
+  
+  .grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: row dense;
+  }
+  
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #0c9a9a;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url("../images/ulm7.JPG");
+    background-size: cover;
+    background-position: center;
+    box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    counter-increment: item-counter;
+    
+    &:nth-of-type(2n) {
+        background-image: url("../images/ulm2.jpg");
+    }
+
+    &:nth-of-type(3n) {
+      background-image: url("../images/ulm3.webp");
+    }
+    
+    &:nth-of-type(4n) {
+      background-image: url("../images/ulm4.jpg");
+    }
+    
+    &:nth-of-type(5n) {
+        background-image: url("../images/ulm3.webp");
+    }
+    
+    &:nth-of-type(6n) {
+      background-image: url("../images/ulm1.jpg");
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.3;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    &:hover {
+      transform: scale(1.05);
+      
+      &:after {
+        opacity: 0;
+      }
+    }
+  
+    &--medium {
+      grid-row-end: span 2;
+      grid-column-end: span 2; 
+    }
+  
+    &--medium-1{
+      grid-row-end: span 2;
+      grid-column-end: span 2; 
+
+      @media screen and (max-width: 900px) {
+        grid-row-end: span 2;
+        grid-column-end: span 4;
+      }
+    }
+  
+    &--large {
+      grid-row-end: span 2;
+    }
+  
+    &--full {
+      grid-column-end: auto;
+  
+      @media screen and (min-width: 768px) {
+        grid-column: 1/-1;
+        grid-row-end: span 2;
+      }
+    }
+    
+    &__details {
+      position: relative;
+      z-index: 1;
+      padding: 15px;
+      color: #444;
+      background: #fff;
+      text-transform: lowercase;
+      letter-spacing: 1px;
+      color: #828282;
+      
+      &:before {
+        content: counter(item-counter);
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding-right: 0.5em;
+        color: #444;
+      }
+    }
+  }
+
+    &--aboutACM{
+        @include divStyle();
+    }
+
+    &--aboutChapter{
+        @include divStyle();
+        margin: 10px auto;
+    }
+
+    &--hot_topic{
+        @include divStyle();
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-div{
+  opacity: 0;
+}
+
+.animated-div.visible{
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}

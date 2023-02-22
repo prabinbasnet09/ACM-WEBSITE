@@ -1,0 +1,148 @@
+body {
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+  }
+  h1, h2, p, ul, li {
+    font-family: sans-serif;
+  
+  }
+  ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    
+  }
+  ul.header {
+    background-color: #111;
+    padding: 0;
+    
+  }
+  ul.header li a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+  }
+  .content {
+    background-color: #FFF;
+    padding: 20px;
+    
+  }
+  .content h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .content li {
+    margin-bottom: 10px;
+  }
+
+  #initial {
+    background-color: rgb(82, 19, 19);
+    
+  }
+
+  #second {
+    background-color: rgb(82, 19, 19);
+    color: yellow;
+  }
+
+  #inside_content {
+    color: black;
+    background-color: green;
+  }
+
+  #home_content{
+    background-color: green;
+  }
+
+
+  .float-container1 {
+    border: 3px solid #fff;
+    padding: 20px;
+    display: inline-block;
+    width: 35%;
+    margin: 50px;
+    font-size: 200%;
+}
+
+.float-container2 {
+  border: 3px solid #fff;
+    padding: 20px;
+    display: inline-block;
+    width: 35%;
+    margin: 50px;
+    font-size: 200%;;
+}
+
+.float-child1 {
+    width: 50%;
+    height: 100px;
+    color: black;
+    float: left;
+    padding: 20px;
+    border: 2px solid brown;
+    margin: 50px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.float-child2 {
+  width: 50%;
+  height: 100px;
+  color: black;
+  float: left;
+  padding: 20px;
+  border: 2px solid gray;
+  margin: 50px;
+  background-color: brown;
+  text-align: center;
+  padding-top: 75px;
+} 
+
+.float-child3 {
+  width: 50%;
+    height: 100px;
+    color: black;
+    float: left;
+    padding: 20px;
+    border: 2px solid gray;
+    margin: 50px;
+    background-color: brown;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.float-child4 {
+  width: 50%;
+  height: 100px;
+  color: black;
+  float: left;
+  padding: 20px;
+  border: 2px solid brown;
+  margin: 50px;
+  background-color: gray;
+  text-align: center;
+  padding-top: 75px;
+} 
+
+
+.float-container1 :hover {
+  background-color: black;
+  color: gold;
+}
+
+.float-container2 :hover {
+  background-color: black;
+  color: gold;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-hide {
+  display: none;
+}
