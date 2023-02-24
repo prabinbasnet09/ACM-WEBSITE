@@ -97,13 +97,13 @@ export default function Home() {
       >
         <p className="heading">ACM as a gloabal community</p>
         <p className="description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-          mollitia vel obcaecati tenetur rerum suscipit alias repudiandae
-          laudantium ab. Qui veniam dolore perspiciatis sapiente itaque,
-          incidunt quam accusamus numquam natus! Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Corporis mollitia vel obcaecati tenetur
-          rerum suscipit alias repudiandae laudantium ab. Qui veniam dolore
-          perspiciatis sapiente itaque, incidunt quam accusamus numquam natus!
+        The Association for Computing Machinery (ACM) is a global professional organization for individuals who work in the field of computing and technology. Founded in 1947, ACM is dedicated to advancing the science and practice of computing by promoting educational and research opportunities, developing professional standards, and supporting the professional growth of its members.
+        <br />
+        <br />
+        As a global community, ACM has members in more than 190 countries around the world, including students, researchers, educators, and professionals from a variety of computing disciplines. Through its various initiatives, including conferences, publications, and special interest groups, ACM provides a platform for members to connect with each other, share ideas, and collaborate on cutting-edge research and development in the field of computing.
+        <br />
+        <br />
+        ACM also works to advance the understanding and importance of computing within society, through efforts such as public policy advocacy and the promotion of ethical and socially responsible computing practices. Overall, ACM serves as a leading voice and hub for the global computing community, bringing together individuals and organizations to drive innovation and progress in the field.
         </p>
       </section>
       <section
@@ -113,13 +113,10 @@ export default function Home() {
       >
         <p className="heading">Why ACM Student Chapter at ULM?</p>
         <p className="description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-          mollitia vel obcaecati tenetur rerum suscipit alias repudiandae
-          laudantium ab. Qui veniam dolore perspiciatis sapiente itaque,
-          incidunt quam accusamus numquam natus! Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Corporis mollitia vel obcaecati tenetur
-          rerum suscipit alias repudiandae laudantium ab. Qui veniam dolore
-          perspiciatis sapiente itaque, incidunt quam accusamus numquam natus!
+          ACM Student Chapter at ULM is a student organization that is a part of the global ACM community. Almost 100+ universities
+          in US are part of ACM. ACM at ULM is focused on providing students with opportunities to learn and grow in the field of computer
+          science. ACM at ULM enhances student's programming experience through different workshops and coding competitions. Students are determined
+          to use this platform to learn, develop, and share their skills in Computer Science. 
         </p>
       </section>
 

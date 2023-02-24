@@ -97,15 +97,7 @@ export default function AcademicDescription(){
             <section className = "internship_description">
                 <p className = "internship--title">Looking for an Internship?🤔</p>
                 <p className = "internship--body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
-                    vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
-                    veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
-                    natus!
-
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
-                    vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
-                    veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
-                    natus!
+                            For computer science undergrad students, securing an internship is a crucial step towards building a successful career in the field of technology. An internship provides students with valuable hands-on experience, networking opportunities, and exposure to real-world scenarios. It is also an excellent way to apply the theoretical knowledge gained in the classroom to practical projects. However, finding the right internship can be a daunting task, requiring students to research potential companies, tailor their resumes and cover letters, and prepare for interviews. With so many other students competing for the same opportunities, it's important to start the search early and utilize all available resources, including career fairs, job boards, and professional networking sites. A well-planned internship can open doors to future job prospects, so it's essential for computer science students to take this search seriously and invest the time and effort required to secure a valuable internship experience.
                 </p>
             </section>
 
