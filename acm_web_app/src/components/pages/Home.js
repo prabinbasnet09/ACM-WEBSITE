@@ -95,7 +95,7 @@ export default function Home() {
         tabIndex={0}
         ref={(el) => (divRefs.current[6] = el)}
       >
-        <p className="heading">ACM as a gloabal community</p>
+        <p className="heading">ACM as a global community</p>
         <p className="description">
         The Association for Computing Machinery (ACM) is a global professional organization for individuals who work in the field of computing and technology. Founded in 1947, ACM is dedicated to advancing the science and practice of computing by promoting educational and research opportunities, developing professional standards, and supporting the professional growth of its members.
         <br />

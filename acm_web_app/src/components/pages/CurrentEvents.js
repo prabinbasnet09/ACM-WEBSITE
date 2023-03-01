@@ -7,12 +7,12 @@ import getDay from "date-fns/getDay"
 import enUs from "date-fns/locale/en-US"
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "react-big-calendar/lib/css/react-big-calendar.css"
-import ImageSlider from '../layout/imageSlider'
+import ImageSlider from '../../components/layout/imageSlider';
 
 const locales = {
   "en-US": enUs
 }
+
 
 const localizer = dateFnsLocalizer({
   format,
@@ -72,7 +72,6 @@ function CurrentEvents() {
         endAccessor="end" 
         style={{ height: 500, margin: "50px" }} 
       />
-      
       
       {/* <div>
         <h2>Add New Event</h2>

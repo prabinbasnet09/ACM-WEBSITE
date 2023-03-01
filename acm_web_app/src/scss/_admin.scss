@@ -52,7 +52,7 @@ input {
   margin-top: 30px;
 }
 
-label, input, button {
+.loogin-label, .login-input, .login-btn {
   display: block;
   width: 100%;
   padding: 0;
@@ -60,6 +60,8 @@ label, input, button {
   outline: none;
   box-sizing: border-box;
 }
+
+
 
 .login-label {
   margin-bottom: 4px;

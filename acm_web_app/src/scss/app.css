@@ -729,12 +729,14 @@
   }
 }
 .descriptionContainer .find_internships .internship_finder .finder_logo .site_logo {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 55px;
   height: 60px;
 }
 .descriptionContainer .find_internships .internship_finder .finder_logo .idealist {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 300px;
   height: 50px;
 }
@@ -820,6 +822,7 @@
 }
 .descriptionContainer .interns_ulm .interns--container .interns .interns--image {
   display: block;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin: 5px auto 30px auto;
 }
@@ -883,6 +886,7 @@
 }
 .descriptionContainer .ulm_developers .ulm_developers--container .acmDevelopers .developers--image {
   display: block;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin: 5px auto 30px auto;
 }
@@ -1030,7 +1034,7 @@ input {
   margin-top: 30px;
 }
 
-label, input, button {
+.loogin-label, .login-input, .login-btn {
   display: block;
   width: 100%;
   padding: 0;
@@ -1046,6 +1050,10 @@ label, input, button {
 
 .login-label:nth-of-type(2) {
   margin-top: 12px;
+}
+
+.login-input::-moz-placeholder {
+  color: gray;
 }
 
 .login-input::placeholder {
@@ -1083,6 +1091,4 @@ body {
   margin-top: 6rem;
   background: #f5f7f8;
   color: black;
-}
-
-/*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
